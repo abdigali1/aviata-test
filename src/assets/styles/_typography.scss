@@ -1,0 +1,17 @@
+@import "@/assets/styles/_colors";
+$main-font: 'Open Sans';
+
+@mixin textMixin($w: bold, $fs: 14px, $lh: 20px, $c: $text-black) {
+  font-weight: $w;
+  font-size: $fs;
+  line-height: $lh;
+  color: $c;
+}
+
+@mixin dashedLink() {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-link;
+  border-bottom: 1px dashed $bg-dashed_border-color;
+}
